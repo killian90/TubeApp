@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "TFLParser.h"
+#import "TubeLine.h"
+#import "TubeLineViewController.h"
 
 @interface AppDelegate ()
 
@@ -40,6 +43,47 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    
+    NSString *tubeLineName = [url host];
+    
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.koc.extensiontest"];
+    
+    if ([defaults objectForKey:@"weekendData"]) {
+        
+        NSData *tubeData = [[defaults objectForKey:@"weekendData"] copy];
+        
+        TFLParser *parser = [[TFLParser alloc] initWithData:tubeData];
+        [parser parseData];
+        for (int x = 0; x < parser.delayedTubeLines.count; x++) {
+            
+            TubeLine *tl = [[TubeLine alloc] init];
+            tl = [parser.delayedTubeLines objectAtIndex:x];
+            if ([tl.lineName isEqualToString:tubeLineName]) {
+                
+                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                TubeLineViewController *tubeLineViewController = [storyboard instantiateViewControllerWithIdentifier:@"TubeLineViewController"];
+                [tubeLineViewController loadTubeLineData:tl];
+                [self.window.rootViewController presentViewController:tubeLineViewController animated:YES completion:nil];
+                return YES;
+            }
+        }
+    }
+    
+    
+    UIViewController *vc = [[TubeLineViewController alloc] init];
+    [self.window.rootViewController presentViewController:vc
+                                                 animated:NO
+                                               completion:nil];
+    vc.view.backgroundColor = [UIColor redColor];
+    
+    
+    
+    
+    return YES;
 }
 
 @end

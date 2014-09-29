@@ -14,6 +14,19 @@
 		2C1DF50519CD5807002850B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1DF50419CD5807002850B6 /* Images.xcassets */; };
 		2C1DF50819CD5807002850B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1DF50619CD5807002850B6 /* LaunchScreen.xib */; };
 		2C1DF51419CD5807002850B6 /* WeekendTubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DF51319CD5807002850B6 /* WeekendTubeTests.m */; };
+		2C1DF51F19CD5871002850B6 /* TubeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DF51E19CD5871002850B6 /* TubeLine.m */; };
+		2C1DF52219CD5988002850B6 /* TFLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DF52119CD5988002850B6 /* TFLParser.m */; };
+		2C955B7619D7FB59005D34B7 /* AYVibrantButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C955B7519D7FB59005D34B7 /* AYVibrantButton.m */; };
+		2C955B7919D81030005D34B7 /* TubeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C955B7819D81030005D34B7 /* TubeLineViewController.m */; };
+		95A32E0F452E422387EAC5A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3175EFFC7AE74E25BC777B4C /* libPods.a */; };
+		B8595DC119D445D500BBD582 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1DF50419CD5807002850B6 /* Images.xcassets */; };
+		B88F8F7219D2F412003431FF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88F8F7119D2F412003431FF /* NotificationCenter.framework */; };
+		B88F8F7819D2F412003431FF /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88F8F7719D2F412003431FF /* TodayViewController.m */; };
+		B88F8F7A19D2F412003431FF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88F8F7919D2F412003431FF /* MainInterface.storyboard */; };
+		B88F8F7D19D2F412003431FF /* WeekendTubeExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B88F8F6F19D2F411003431FF /* WeekendTubeExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B88F8F8419D2FB4A003431FF /* TFLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DF52119CD5988002850B6 /* TFLParser.m */; };
+		B88F8F8519D2FB58003431FF /* TubeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DF51E19CD5871002850B6 /* TubeLine.m */; };
+		B88F8F8619D2FB5D003431FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DF4FF19CD5807002850B6 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +37,35 @@
 			remoteGlobalIDString = 2C1DF4F319CD5806002850B6;
 			remoteInfo = WeekendTube;
 		};
+		B88F8F7B19D2F412003431FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1DF4EC19CD5806002850B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B88F8F6E19D2F411003431FF;
+			remoteInfo = WeekendTubeExt;
+		};
+		B88F8F7E19D2F412003431FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1DF4EC19CD5806002850B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B88F8F6E19D2F411003431FF;
+			remoteInfo = WeekendTubeExt;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B88F8F8319D2F412003431FF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B88F8F7D19D2F412003431FF /* WeekendTubeExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2C1DF4F419CD5807002850B6 /* WeekendTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekendTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +81,24 @@
 		2C1DF50D19CD5807002850B6 /* WeekendTubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeekendTubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1DF51219CD5807002850B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1DF51319CD5807002850B6 /* WeekendTubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeekendTubeTests.m; sourceTree = "<group>"; };
+		2C1DF51D19CD5871002850B6 /* TubeLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TubeLine.h; sourceTree = "<group>"; };
+		2C1DF51E19CD5871002850B6 /* TubeLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TubeLine.m; sourceTree = "<group>"; };
+		2C1DF52019CD5988002850B6 /* TFLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFLParser.h; sourceTree = "<group>"; };
+		2C1DF52119CD5988002850B6 /* TFLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFLParser.m; sourceTree = "<group>"; };
+		2C955B7419D7FB59005D34B7 /* AYVibrantButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYVibrantButton.h; path = "../../../Downloads/AYVibrantButton-master/AYVibrantButton/AYVibrantButton.h"; sourceTree = "<group>"; };
+		2C955B7519D7FB59005D34B7 /* AYVibrantButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYVibrantButton.m; path = "../../../Downloads/AYVibrantButton-master/AYVibrantButton/AYVibrantButton.m"; sourceTree = "<group>"; };
+		2C955B7719D81030005D34B7 /* TubeLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TubeLineViewController.h; sourceTree = "<group>"; };
+		2C955B7819D81030005D34B7 /* TubeLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TubeLineViewController.m; sourceTree = "<group>"; };
+		3175EFFC7AE74E25BC777B4C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83C978119D82EF5006526D4 /* WeekendTube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WeekendTube.entitlements; sourceTree = "<group>"; };
+		B83C978219D83DF7006526D4 /* WeekendTubeExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WeekendTubeExt.entitlements; sourceTree = "<group>"; };
+		B88F8F6F19D2F411003431FF /* WeekendTubeExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeekendTubeExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88F8F7119D2F412003431FF /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B88F8F7519D2F412003431FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B88F8F7619D2F412003431FF /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		B88F8F7719D2F412003431FF /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		B88F8F7919D2F412003431FF /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		B9FF0FE6C08D4E21A00ECD63 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A32E0F452E422387EAC5A0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +114,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88F8F6C19D2F411003431FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88F8F7219D2F412003431FF /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +133,10 @@
 			children = (
 				2C1DF4F619CD5807002850B6 /* WeekendTube */,
 				2C1DF51019CD5807002850B6 /* WeekendTubeTests */,
+				B88F8F7319D2F412003431FF /* WeekendTubeExt */,
+				B88F8F7019D2F412003431FF /* Frameworks */,
 				2C1DF4F519CD5807002850B6 /* Products */,
+				B9FF0FE6C08D4E21A00ECD63 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +145,7 @@
 			children = (
 				2C1DF4F419CD5807002850B6 /* WeekendTube.app */,
 				2C1DF50D19CD5807002850B6 /* WeekendTubeTests.xctest */,
+				B88F8F6F19D2F411003431FF /* WeekendTubeExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,10 +153,17 @@
 		2C1DF4F619CD5807002850B6 /* WeekendTube */ = {
 			isa = PBXGroup;
 			children = (
+				B83C978119D82EF5006526D4 /* WeekendTube.entitlements */,
 				2C1DF4FB19CD5807002850B6 /* AppDelegate.h */,
 				2C1DF4FC19CD5807002850B6 /* AppDelegate.m */,
 				2C1DF4FE19CD5807002850B6 /* ViewController.h */,
 				2C1DF4FF19CD5807002850B6 /* ViewController.m */,
+				2C955B7719D81030005D34B7 /* TubeLineViewController.h */,
+				2C955B7819D81030005D34B7 /* TubeLineViewController.m */,
+				2C1DF51D19CD5871002850B6 /* TubeLine.h */,
+				2C1DF51E19CD5871002850B6 /* TubeLine.m */,
+				2C1DF52019CD5988002850B6 /* TFLParser.h */,
+				2C1DF52119CD5988002850B6 /* TFLParser.m */,
 				2C1DF50119CD5807002850B6 /* Main.storyboard */,
 				2C1DF50419CD5807002850B6 /* Images.xcassets */,
 				2C1DF50619CD5807002850B6 /* LaunchScreen.xib */,
@@ -119,6 +198,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B88F8F7019D2F412003431FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B88F8F7119D2F412003431FF /* NotificationCenter.framework */,
+				3175EFFC7AE74E25BC777B4C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B88F8F7319D2F412003431FF /* WeekendTubeExt */ = {
+			isa = PBXGroup;
+			children = (
+				B83C978219D83DF7006526D4 /* WeekendTubeExt.entitlements */,
+				2C955B7419D7FB59005D34B7 /* AYVibrantButton.h */,
+				2C955B7519D7FB59005D34B7 /* AYVibrantButton.m */,
+				B88F8F7619D2F412003431FF /* TodayViewController.h */,
+				B88F8F7719D2F412003431FF /* TodayViewController.m */,
+				B88F8F7919D2F412003431FF /* MainInterface.storyboard */,
+				B88F8F7419D2F412003431FF /* Supporting Files */,
+			);
+			path = WeekendTubeExt;
+			sourceTree = "<group>";
+		};
+		B88F8F7419D2F412003431FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B88F8F7519D2F412003431FF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,13 +236,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C1DF51719CD5807002850B6 /* Build configuration list for PBXNativeTarget "WeekendTube" */;
 			buildPhases = (
+				1141FF290525486FBC03BCCA /* Check Pods Manifest.lock */,
 				2C1DF4F019CD5806002850B6 /* Sources */,
 				2C1DF4F119CD5806002850B6 /* Frameworks */,
 				2C1DF4F219CD5806002850B6 /* Resources */,
+				B88F8F8319D2F412003431FF /* Embed App Extensions */,
+				D90754C8C43240CDB6867BB0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B88F8F7C19D2F412003431FF /* PBXTargetDependency */,
+				B88F8F7F19D2F412003431FF /* PBXTargetDependency */,
 			);
 			name = WeekendTube;
 			productName = WeekendTube;
@@ -157,6 +272,23 @@
 			productReference = 2C1DF50D19CD5807002850B6 /* WeekendTubeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B88F8F6E19D2F411003431FF /* WeekendTubeExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B88F8F8219D2F412003431FF /* Build configuration list for PBXNativeTarget "WeekendTubeExt" */;
+			buildPhases = (
+				B88F8F6B19D2F411003431FF /* Sources */,
+				B88F8F6C19D2F411003431FF /* Frameworks */,
+				B88F8F6D19D2F411003431FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeekendTubeExt;
+			productName = WeekendTubeExt;
+			productReference = B88F8F6F19D2F411003431FF /* WeekendTubeExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +300,25 @@
 				TargetAttributes = {
 					2C1DF4F319CD5806002850B6 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 349D3WSP52;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					2C1DF50C19CD5807002850B6 = {
 						CreatedOnToolsVersion = 6.0.1;
 						TestTargetID = 2C1DF4F319CD5806002850B6;
+					};
+					B88F8F6E19D2F411003431FF = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 349D3WSP52;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -190,6 +337,7 @@
 			targets = (
 				2C1DF4F319CD5806002850B6 /* WeekendTube */,
 				2C1DF50C19CD5807002850B6 /* WeekendTubeTests */,
+				B88F8F6E19D2F411003431FF /* WeekendTubeExt */,
 			);
 		};
 /* End PBXProject section */
@@ -212,7 +360,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B88F8F6D19D2F411003431FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88F8F7A19D2F412003431FF /* MainInterface.storyboard in Resources */,
+				B8595DC119D445D500BBD582 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1141FF290525486FBC03BCCA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D90754C8C43240CDB6867BB0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C1DF4F019CD5806002850B6 /* Sources */ = {
@@ -220,8 +410,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C1DF50019CD5807002850B6 /* ViewController.m in Sources */,
+				2C1DF51F19CD5871002850B6 /* TubeLine.m in Sources */,
+				2C955B7919D81030005D34B7 /* TubeLineViewController.m in Sources */,
 				2C1DF4FD19CD5807002850B6 /* AppDelegate.m in Sources */,
 				2C1DF4FA19CD5807002850B6 /* main.m in Sources */,
+				2C1DF52219CD5988002850B6 /* TFLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +426,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B88F8F6B19D2F411003431FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88F8F8519D2FB58003431FF /* TubeLine.m in Sources */,
+				B88F8F7819D2F412003431FF /* TodayViewController.m in Sources */,
+				B88F8F8619D2FB5D003431FF /* ViewController.m in Sources */,
+				2C955B7619D7FB59005D34B7 /* AYVibrantButton.m in Sources */,
+				B88F8F8419D2FB4A003431FF /* TFLParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +445,16 @@
 			isa = PBXTargetDependency;
 			target = 2C1DF4F319CD5806002850B6 /* WeekendTube */;
 			targetProxy = 2C1DF50E19CD5807002850B6 /* PBXContainerItemProxy */;
+		};
+		B88F8F7C19D2F412003431FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B88F8F6E19D2F411003431FF /* WeekendTubeExt */;
+			targetProxy = B88F8F7B19D2F412003431FF /* PBXContainerItemProxy */;
+		};
+		B88F8F7F19D2F412003431FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B88F8F6E19D2F411003431FF /* WeekendTubeExt */;
+			targetProxy = B88F8F7E19D2F412003431FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -341,21 +556,31 @@
 		};
 		2C1DF51819CD5807002850B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9FF0FE6C08D4E21A00ECD63 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WeekendTube/WeekendTube.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeekendTube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		2C1DF51919CD5807002850B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9FF0FE6C08D4E21A00ECD63 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WeekendTube/WeekendTube.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeekendTube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -393,6 +618,38 @@
 			};
 			name = Release;
 		};
+		B88F8F8019D2F412003431FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WeekendTubeExt/WeekendTubeExt.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeekendTubeExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B88F8F8119D2F412003431FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WeekendTubeExt/WeekendTubeExt.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = WeekendTubeExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -412,6 +669,7 @@
 				2C1DF51919CD5807002850B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C1DF51A19CD5807002850B6 /* Build configuration list for PBXNativeTarget "WeekendTubeTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +678,16 @@
 				2C1DF51C19CD5807002850B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B88F8F8219D2F412003431FF /* Build configuration list for PBXNativeTarget "WeekendTubeExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88F8F8019D2F412003431FF /* Debug */,
+				B88F8F8119D2F412003431FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
