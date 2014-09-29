@@ -16,7 +16,7 @@
 		2C1DF51419CD5807002850B6 /* WeekendTubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DF51319CD5807002850B6 /* WeekendTubeTests.m */; };
 		2C1DF51F19CD5871002850B6 /* TubeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DF51E19CD5871002850B6 /* TubeLine.m */; };
 		2C1DF52219CD5988002850B6 /* TFLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DF52119CD5988002850B6 /* TFLParser.m */; };
-		2C955B7619D7FB59005D34B7 /* AYVibrantButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C955B7519D7FB59005D34B7 /* AYVibrantButton.m */; };
+		2C404F2E19DA0AAB00AD22C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C404F2D19DA0AAB00AD22C2 /* libPods.a */; };
 		2C955B7919D81030005D34B7 /* TubeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C955B7819D81030005D34B7 /* TubeLineViewController.m */; };
 		95A32E0F452E422387EAC5A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3175EFFC7AE74E25BC777B4C /* libPods.a */; };
 		B8595DC119D445D500BBD582 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1DF50419CD5807002850B6 /* Images.xcassets */; };
@@ -85,8 +85,7 @@
 		2C1DF51E19CD5871002850B6 /* TubeLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TubeLine.m; sourceTree = "<group>"; };
 		2C1DF52019CD5988002850B6 /* TFLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFLParser.h; sourceTree = "<group>"; };
 		2C1DF52119CD5988002850B6 /* TFLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFLParser.m; sourceTree = "<group>"; };
-		2C955B7419D7FB59005D34B7 /* AYVibrantButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYVibrantButton.h; path = "../../../Downloads/AYVibrantButton-master/AYVibrantButton/AYVibrantButton.h"; sourceTree = "<group>"; };
-		2C955B7519D7FB59005D34B7 /* AYVibrantButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYVibrantButton.m; path = "../../../Downloads/AYVibrantButton-master/AYVibrantButton/AYVibrantButton.m"; sourceTree = "<group>"; };
+		2C404F2D19DA0AAB00AD22C2 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		2C955B7719D81030005D34B7 /* TubeLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TubeLineViewController.h; sourceTree = "<group>"; };
 		2C955B7819D81030005D34B7 /* TubeLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TubeLineViewController.m; sourceTree = "<group>"; };
 		3175EFFC7AE74E25BC777B4C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C404F2E19DA0AAB00AD22C2 /* libPods.a in Frameworks */,
 				B88F8F7219D2F412003431FF /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +201,7 @@
 		B88F8F7019D2F412003431FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C404F2D19DA0AAB00AD22C2 /* libPods.a */,
 				B88F8F7119D2F412003431FF /* NotificationCenter.framework */,
 				3175EFFC7AE74E25BC777B4C /* libPods.a */,
 			);
@@ -211,8 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				B83C978219D83DF7006526D4 /* WeekendTubeExt.entitlements */,
-				2C955B7419D7FB59005D34B7 /* AYVibrantButton.h */,
-				2C955B7519D7FB59005D34B7 /* AYVibrantButton.m */,
 				B88F8F7619D2F412003431FF /* TodayViewController.h */,
 				B88F8F7719D2F412003431FF /* TodayViewController.m */,
 				B88F8F7919D2F412003431FF /* MainInterface.storyboard */,
@@ -433,7 +432,6 @@
 				B88F8F8519D2FB58003431FF /* TubeLine.m in Sources */,
 				B88F8F7819D2F412003431FF /* TodayViewController.m in Sources */,
 				B88F8F8619D2FB5D003431FF /* ViewController.m in Sources */,
-				2C955B7619D7FB59005D34B7 /* AYVibrantButton.m in Sources */,
 				B88F8F8419D2FB4A003431FF /* TFLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +618,7 @@
 		};
 		B88F8F8019D2F412003431FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9FF0FE6C08D4E21A00ECD63 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = WeekendTubeExt/WeekendTubeExt.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -630,6 +629,10 @@
 				);
 				INFOPLIST_FILE = WeekendTubeExt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -638,12 +641,17 @@
 		};
 		B88F8F8119D2F412003431FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9FF0FE6C08D4E21A00ECD63 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = WeekendTubeExt/WeekendTubeExt.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeekendTubeExt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;

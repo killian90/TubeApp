@@ -6,6 +6,12 @@
 // project.
 
 
+// AYVibrantButton
+#define COCOAPODS_POD_AVAILABLE_AYVibrantButton
+#define COCOAPODS_VERSION_MAJOR_AYVibrantButton 1
+#define COCOAPODS_VERSION_MINOR_AYVibrantButton 0
+#define COCOAPODS_VERSION_PATCH_AYVibrantButton 3
+
 // OpenSans
 #define COCOAPODS_POD_AVAILABLE_OpenSans
 #define COCOAPODS_VERSION_MAJOR_OpenSans 1

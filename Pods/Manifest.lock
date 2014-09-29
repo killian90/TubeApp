@@ -1,10 +1,13 @@
 PODS:
+  - AYVibrantButton (1.0.3)
   - OpenSans (1.0.3)
 
 DEPENDENCIES:
+  - AYVibrantButton
   - OpenSans
 
 SPEC CHECKSUMS:
+  AYVibrantButton: 6ef08db44395e9b819560191a048297be2e8b727
   OpenSans: fb4374107f269022e5067380e477ff9f1436ee53
 
 COCOAPODS: 0.33.1
