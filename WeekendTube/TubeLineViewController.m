@@ -10,13 +10,10 @@
 #import <OpenSans/UIFont+OpenSans.h>
 
 @interface TubeLineViewController ()
-@property (nonatomic) TubeLine *tubeLine;
-@property (weak, nonatomic) IBOutlet UILabel *tubeLineName;
-@property (weak, nonatomic) IBOutlet UITextView *tubeLineMessage;
-@property (strong, nonatomic) IBOutlet UIImageView *tubeLineImage;
+
 @property (nonatomic) UIVisualEffectView *effectView;
 
-
+@property (nonatomic) NSUserDefaults *sharedDefaults;
 
 @end
 
@@ -27,51 +24,31 @@
     self = [super initWithCoder:aDecoder];
     
     if (self) {
-
+        
     }
     
     return self;
 }
 
-- (void)loadTubeLineData:(TubeLine *)tubeLine {
-    
-    self.tubeLine = tubeLine;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tubeLineName.text = self.tubeLine.lineName;
-    UIColor *color1 = self.tubeLine.lineBackgroundUIColor;
-    self.tubeLineName.backgroundColor = [color1 colorWithAlphaComponent:0.8f];
+    self.sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.koc.extensiontest"];
+    
+        NSData *encodedObject = [self.sharedDefaults objectForKey:@"currentTubeData"];
+        TubeLine *tubeLine = [NSKeyedUnarchiver unarchiveObjectWithData:encodedObject];
+    
+    
+    self.tubeLineName.text = tubeLine.lineName;
     self.tubeLineName.font = [UIFont openSansLightFontOfSize:18.0f];
-//    self.tubeLineMessage.font = [UIFont openSansLightFontOfSize:18.0f];
-    
-//    self.tubeLineMessage.text = self.tubeLine.lineMessage;
     self.tubeLineName.textColor = [UIColor whiteColor];
+    self.tubeLineName.backgroundColor = tubeLine.lineBackgroundUIColor;
+    self.tubeLineName.layer.cornerRadius = 5;
+    self.tubeLineName.clipsToBounds = YES;
     
-    
-//    
-//    UIBlurEffect *rightBlurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
-//    self.effectView = [[UIVisualEffectView alloc]initWithEffect:rightBlurEffect];
-//    self.effectView.frame = self.tubeLineImage.frame;
-//    
-//    UIVibrancyEffect *vibrancyEffect = [UIVibrancyEffect effectForBlurEffect:rightBlurEffect];
-//    UIVisualEffectView *vibrancyEffectView = [[UIVisualEffectView alloc] initWithEffect:vibrancyEffect];
-//    vibrancyEffectView.frame = self.tubeLineImage.frame;
-//    
-//
-//        [vibrancyEffectView addConstraints:self.tubeLineImage.constraints];
-//    [self.effectView addConstraints:self.tubeLineImage.constraints];
-//    
-//
-//    [[vibrancyEffectView contentView] addSubview:self.tubeLineImage];
-//    [[self.effectView contentView] addSubview:vibrancyEffectView];
-//    
-    
-    
-    self.effectView.center = self.tubeLineImage.center;
-    
+    self.tubeLineMessage.font = [UIFont openSansLightFontOfSize:18.0f];
+    self.tubeLineMessage.text = tubeLine.lineMessage;
+    self.tubeLineMessage.textColor = [UIColor darkGrayColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,6 +56,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+//    
+//    self.tubeLineName.text = self.tubeLine.lineName;
+//    self.tubeLineName.font = [UIFont openSansLightFontOfSize:18.0f];
+//    self.tubeLineName.textColor = [UIColor whiteColor];
+//    self.tubeLineName.backgroundColor = self.tubeLine.lineBackgroundUIColor;
+//    self.tubeLineName.layer.cornerRadius = 5;
+//    self.tubeLineName.clipsToBounds = YES;
+//    
+//    self.tubeLineMessage.font = [UIFont openSansLightFontOfSize:18.0f];
+//    self.tubeLineMessage.text = self.tubeLine.lineMessage;
+//    self.tubeLineMessage.textColor = [UIColor darkGrayColor];
+    
+}
 /*
 #pragma mark - Navigation
 

@@ -35,6 +35,7 @@ static int kSegmentedControlHeight = 22;
 @property (nonatomic) UISegmentedControl *segmentedControl;
 @property (nonatomic) UIVisualEffectView *vibrantSegmentedControlView;
 @property (nonatomic) TubeLine *expanededTubeLine;
+@property (nonatomic) NSUserDefaults *sharedDefaults;
 
 @end
 
@@ -45,6 +46,7 @@ static int kSegmentedControlHeight = 22;
     [super viewDidLoad];
     
     self.preferredContentSize = CGSizeMake(320, 50);
+    self.sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.koc.extensiontest"];
     
     NSURLRequest *affectedTubeLineURLRequest =
     [NSURLRequest requestWithURL:[NSURL URLWithString:feedURLString]];
@@ -55,10 +57,10 @@ static int kSegmentedControlHeight = 22;
                                
                                if (response && !error) {
                                    
-                                   NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.koc.extensiontest"];
                                    
-                                   [sharedDefaults setObject:data forKey:@"weekendData"];
-                                   [sharedDefaults synchronize];
+                                   
+                                   [self.sharedDefaults setObject:data forKey:@"weekendData"];
+                                   [self.sharedDefaults synchronize];
                                    
                                    
                                    TFLParser *tflParser = [[TFLParser alloc] initWithData:data];
@@ -210,6 +212,11 @@ static int kSegmentedControlHeight = 22;
         
         if ([tubeLine.lineName isEqualToString:sender.titleLabel.text]) {
             
+
+            
+            
+
+            
             [self setupTubeLineMessageLabel];
             [self truncateMessage:tubeLine.lineMessageWithoutTitle BasedOnNumberOfTubeLineViews:self.delayedLines.count];
             self.expanededTubeLine = tubeLine;
@@ -230,7 +237,9 @@ static int kSegmentedControlHeight = 22;
 - (IBAction)openTubeLinePage:(AYVibrantButton *)sender {
     
     NSString *url = [NSString stringWithFormat:@"openfromweekendextension://%@", self.expanededTubeLine.lineName ];
-    //NSString *url = [NSString stringWithFormat:@"openfromweekendextension://"];
+    NSData *encodedObject = [NSKeyedArchiver archivedDataWithRootObject:self.expanededTubeLine];
+    [self.sharedDefaults setObject:encodedObject forKey:@"currentTubeData"];
+    [self.sharedDefaults synchronize];
     
     NSExtensionContext *myExtension=[self extensionContext];
     [myExtension openURL:[NSURL URLWithString:url] completionHandler:nil];

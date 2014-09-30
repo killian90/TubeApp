@@ -11,7 +11,10 @@
 
 @interface TubeLineViewController : UIViewController
 
-- (void)loadTubeLineData:(TubeLine *)tubeLine;
+//@property (nonatomic) TubeLine *tubeLine;
+@property (nonatomic, weak) IBOutlet UILabel *tubeLineName;
+@property (nonatomic, weak) IBOutlet UITextView *tubeLineMessage;
+@property (nonatomic, weak) IBOutlet UIImageView *tubeLineImage;
 
 
 @end
