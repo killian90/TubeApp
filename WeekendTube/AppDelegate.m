@@ -66,21 +66,10 @@
             tl = [parser.delayedTubeLines objectAtIndex:x];
             if ([tl.lineName isEqualToString:tubeLineName]) {
                 
+                [self.window.rootViewController dismissViewControllerAnimated:NO completion:nil];
+                
                 UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                 TubeLineViewController *tubeLineViewController = [storyboard instantiateViewControllerWithIdentifier:@"TubeLineViewController"];
-//                tubeLineViewController.tubeLine = tl;
-                
-//                tubeLineViewController.tubeLineName.text = tl.lineName;
-//                tubeLineViewController.tubeLineName.font = [UIFont openSansLightFontOfSize:18.0f];
-//                tubeLineViewController.tubeLineName.textColor = [UIColor whiteColor];
-//                tubeLineViewController.tubeLineName.backgroundColor = tl.lineBackgroundUIColor;
-//                tubeLineViewController.tubeLineName.layer.cornerRadius = 5;
-//                tubeLineViewController.tubeLineName.clipsToBounds = YES;
-//                
-//                tubeLineViewController.tubeLineMessage.font = [UIFont openSansLightFontOfSize:18.0f];
-//                tubeLineViewController.tubeLineMessage.text = tl.lineMessage;
-//                tubeLineViewController.tubeLineMessage.textColor = [UIColor darkGrayColor];
-                
                 
                 [self.window.rootViewController presentViewController:tubeLineViewController animated:YES completion:nil];
                 return YES;
